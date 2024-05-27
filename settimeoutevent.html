@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main">
+    <div style="text-align: center;">
+        <p>Want To Know My Name</p>
+        <p id="ajay"></p>
+        <hr>
+        <button style="border: 2px solid red; border-radius: 10px; font-size: xx-large;" id="btn">Click here</button>
+    </div>
+</div>
+
+<script>
+        const myname = document.querySelector('#ajay');
+        const btn = document.querySelector('#btn');
+
+        const ajay = ()=>{
+            myname.innerHTML ="loading ... wait guys"
+            setTimeout(() => {
+                myname.innerHTML="Ajay Dhanwate"
+            }, 1000);
+        } 
+
+        btn.addEventListener('click',ajay);
+        
+</script>
+
+</body>
+</html>

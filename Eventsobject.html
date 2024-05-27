@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <button style="cursor: pointer;" id="fourthway">event object buttons</button>
+            
+            
+            <script>
+            const fourthway = document.getElementById('fourthway')
+            const checkEvent = () =>{
+                alert('hum dekh rahe hai object');
+                console.log(event);
+                console.log(event.target);
+                console.log(event.type)
+            }
+            fourthway.addEventListener('click',checkEvent)
+
+
+            // to get all the informatio about the event,we can use the event object;
+
+
+            </script>
+</body>
+</html>

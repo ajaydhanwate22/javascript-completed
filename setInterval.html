@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>can you stop me when I reach at?</p>
+            <br>
+            <button id="btn">Click here</button>
+        </div>
+    </div>
+    <script>
+             const Stopnum = document.querySelector('#p');
+        const btn = document.querySelector('#btn');
+        let num =0;
+
+        const shownum = ()=>{
+            shownum.innerHTML ="loading ... wait guys"
+            setInterval(() => {
+                
+            }, interval);(() => {
+                shownum.innerHTML="Ajay Dhanwate"
+            }, 1000);
+        } 
+
+        btn.addEventListener('click',shownum);
+    </script>
+</body>
+</html>

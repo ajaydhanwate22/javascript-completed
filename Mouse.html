@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myp" onmousedown="onmousedown ()" onmouseup="onmouseup()">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem deserunt officia quo fugiat id, numquam dolorem quidem enim qui unde nisi excepturi alias repellendus consectetur est distinctio ut tempore temporibus.</p>
+    <script>
+
+        // first ex: 
+        function onmousedown () {   
+            document.getElementById("myp").style.color='red';
+        }
+        function onmouseup () {
+            document.getElementById("myp").style.color='green';
+        }
+
+
+
+        // second ex: 
+        const menter = document.getElementById('myp');
+
+        menter.addEventListener('mouseenter',()=>{
+            menter.style.backgroundColor = 'red';
+            console.log('mouse enter')
+        })
+
+        menter.addEventListener('mouseleave',()=>{
+            console.log('mouse leave')
+            menter.style.backgroundColor = 'pink';
+        })
+
+
+
+    </script>
+</body>
+</html>

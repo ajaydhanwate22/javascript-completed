@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center;" class="main">
+      <div>
+        <label for="">your name</label>
+        <input type="text" name="" id="Ice" />
+        <br />
+        <label for="">choose an ice cream flavour
+          <select name="icecream" id="icecream">
+            <option value="">select one</option>
+            <option value="chocalate">Chocalte</option>
+            <option value="Sardine">Sardine</option>
+            <option value="Vanila">Vanila</option>
+          </select>
+        </label>
+        <br />
+        <div id="result"></div>
+      </div>
+    </div>
+    <script>
+        const icecream = document.getElementById('icecream');
+        icecream.addEventListener('change',()=>{
+            const inputChange = document.getElementById('Ice').value;
+            const icecreams = document.getElementById('icecream').value;
+            const icecreame = document.getElementById('result');
+            result.innerHTML = `mr ${inputChange} select ${icecreams} ice creame flavour...`;
+        });
+    </script>
+  </body>
+</html>

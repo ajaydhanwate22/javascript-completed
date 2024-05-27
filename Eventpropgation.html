@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red; height: 100px; width: 100px; cursor: pointer;"
+    class="parentchild" id="parentID"></div>
+    <div style="background-color: black; height: 50px; width: 50px; position: absolute; margin-top: -75px; margin-left: 25px; cursor: pointer; border: 2px solid yellow;" class="child" id="childID"></div>
+
+
+
+   <script>
+    const parentID = document.getElementById('parentID');
+    const childID = document.getElementById('childID')
+
+
+    const parentcall =()=>{
+        alert ('parent Div call');
+    }
+
+    const childcall =()=>{
+        alert('child div call');
+        event.stopImmediatePropagation();
+    }
+
+
+
+    parentID.addEventListener('click',parentcall,true);
+    childID.addEventListener('click',childcall,true);
+   </script>
+</body>
+</html>

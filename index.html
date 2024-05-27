@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="main div" style="text-align: center;">
+        <div class="child-one">
+            <p>i am child one</p>
+        </div>
+        <div class="child-one">
+            <p>i am child two</p>
+        </div>  <div class="child-one">
+            <p>i am child third</p>
+        </div>
+    </div>
 
-
-    <h1>complete js cource</h1>
-
-
-    
-    
-</body>
+    <div style="text-align: center">
+      <p class="para">plz like the video</p>
+      <p class="para">plz share this video</p>
+      <p class="para">don't forgate to subscribe the my channel</p>
+      <h2 id="heading">chaged the content of the h1</h2>
+      <button
+        onclick="changecontent()"
+        style="background-color: yellow; cursor: pointer"
+      >
+        click me
+      </button>
+    </div>
+    <script>
+      const changecontent = () => {
+        document.getElementById("heading").innerHTML =
+          "welcome to ajay dhanwte tutorials";
+      };
+    </script>
+    <button > HII AM AJAY </button>
+  </body>
 </html>

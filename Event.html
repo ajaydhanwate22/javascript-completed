@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--  1:using inline event alert();-->
+    <button onclick="alert('alert meassage show')">simple inline alert </button>
+    <!-- 2:by calling a function( we aleready seen and most common way of writiing ) -->
+     <button onclick="callingfunction()">calling a function</button>
+    <!-- 3: using inline event (HTML onclick property and element .onclick ) -->
+    <button id="thirdway">inline event</button>
+    <!--4:using evets listner (add events listener) -->
+    <button id="fourtway">event listener</button>
+
+    <script>
+
+        
+        const callingfunction = () =>{
+            alert('most common way to writing function')
+        }
+
+
+
+
+
+
+
+
+        const thirdway = document.getElementById('thirdway');
+        thirdway.onclick = function(){
+            alert('most common way to writing function again')
+        }
+
+        thirdway.onclick = function(){
+            console.log('most common way to writing function again')
+        }
+
+        // thidr function over write karne ke bad jo last me call kiya jata hai usko result dispylay kiya jata hai  
+
+
+
+
+
+        const fourtway = document.querySelector('#fourtway');
+        fourtway.addEventListener('click',()=>{
+            alert('i love this way wrting')
+        })
+        fourtway.addEventListener('click',()=>{
+            console.log('i love this way wrting')
+        })
+
+           // fourth function jo first mai result ata hai vahi disply kiaya jata hai.
+
+    </script>
+</body>
+</html>
